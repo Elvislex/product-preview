@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  opacity: 0.6;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+p {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+  margin-top: 0.8em;
+}
+.image01,
+.image02 {
+  width: 100%;
+  display: block;
+}
+.image01 {
+  display: none;
+}
+.image02 {
+  border: solid 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.wrapper {
+  margin: 0.7rem;
+  display: flex;
+}
+.content {
+  margin: auto;
+}
+.info {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.8;
+  padding: 1rem;
+  border: solid 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.price-tag {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+span {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8rem;
+  margin-left: 1em;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+}
+.cart{
+  display: inline;
+}
+.button{
+  text-align: center;
+}
+.btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-style: none;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  background: hsl(158, 36%, 37%);
+  padding: 15px 100px 15px 100px;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  background: hsl(212, 21%, 14%);
+  text-decoration: none;
+}
+@media (min-width: 950px) {
+  h1{
+    width: 70%;
+    margin-top: .6em;
+  }
+  .info p{
+    margin-top:1.5em;
+  }
+  .content {
+    display: flex;
+    width: 50%;
+    margin-top: 4em;
+  }
+  .image02 {
+    display: none;
+  }
+  .image01 {
+    display: block;
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+  }
+  .info {
+    padding-top: 2.5em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
